@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Search for an element in array"""
 
-from constants import my_array
+import array
+
+my_array = array.array("i", [1, 2, 3, 4, 5])
 
 
 def linear_search(arr, target):  # O(n)

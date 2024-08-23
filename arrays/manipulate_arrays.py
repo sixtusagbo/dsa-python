@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import array
+# import array
 
 # my_array = array.array("i", [1, 2, 3, 4, 5])
 # print(my_array)
@@ -17,6 +17,6 @@ def traverse_array(arr):  # Combining all -> O(n)
 
 def access_element(arr, index):  # Combined -> O(1)
     if index >= len(arr):  # O(1)
-        print("Invalid index")  # O(1)
+        print("Invalid index")  #  O(1)
     else:
         print(index)  # O(1)

@@ -20,6 +20,8 @@ print(moddedStats)
 """
 
 
+# The time complexity of this function is O(1)
+# Space complexity is O(1) since we are not using any extra space
 def access_element(array, rowIndex, colIndex):  # O(1)
     if rowIndex >= len(array) or colIndex >= len(array[0]):
         raise ValueError("Invalid index")
@@ -38,10 +40,25 @@ def access_element(array, rowIndex, colIndex):  # O(1)
 # m is the number of rows and n is the number of columns
 # But if the number of rows and columns are the same, then
 # the time complexity is quadratic - O(n^2) since m = n
+# Space complexity is O(1) since we are not using any extra space
 def traverse_2d_array(array):
     for i in range(len(array)):
         for j in range(len(array[0])):
             print(array[i][j])
 
 
-traverse_2d_array(weather_stats)
+# traverse_2d_array(weather_stats)
+
+
+# The time complexity of this function is O(m*n)
+# Space complexity is O(1) since we are not using any extra space
+def search_2d_array(array, target):  # O(mn)
+    for i in range(len(array)):  # O(mn)
+        for j in range(len(array[0])):  # O(n)
+            if array[i][j] == target:  # O(1)
+                return "Element found at rowIndex {}, colIndex {}".format(i, j)
+
+    return "Element not found"
+
+
+print(search_2d_array(weather_stats, 14))

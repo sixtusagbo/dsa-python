@@ -12,6 +12,8 @@ weather_stats = np.array(
 print("before")
 print(weather_stats)
 
+# In numpy, axis 0 is the row and axis 1 is the column
+
 """Inserting
 # moddedStats = np.insert(weather_stats, 0, [[1, 2, 3, 4]], axis=0)
 moddedStats = np.append(weather_stats, [[1, 2, 3, 4]], axis=0)
@@ -61,4 +63,10 @@ def search_2d_array(array, target):  # O(mn)
     return "Element not found"
 
 
-print(search_2d_array(weather_stats, 14))
+# print(search_2d_array(weather_stats, 14))
+
+# Time complexity of deletion from numpy array is O(m*n)
+# Space complexity is O(m*n) since we are creating a new array
+# new_weather_stats = np.delete(weather_stats, 0, axis=0) # Row
+new_weather_stats = np.delete(weather_stats, 0, axis=1)  # Column
+print(new_weather_stats)

@@ -75,8 +75,22 @@ print(sum(a))
 print(sum(a) / len(a))
 """
 
+# Sorting a list
+# sort method
+a = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+a.sort()  # O(nlogn) time, O(1) space
+print(a)
+# sorted function
+a = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+b = sorted(a)  # O(nlogn) time, O(n) space
+print(b)
+# The difference between sort and sorted is that sort modifies
+# the list in place while sorted returns a new list
+
+
 # lists and strings
 # Converting strings to list
+"""
 a = "hello world from Nigeria"
 # b = list(a)
 # print(b) # ['h', 'e', 'l', 'l', 'o']
@@ -87,3 +101,4 @@ c = phone.split("-")
 print(c)
 # Converting list to string
 print("-".join(c))
+"""

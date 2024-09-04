@@ -68,7 +68,22 @@ print(max(a))
 """
 
 # sum function
+"""
 a = [2, 4, 10]
 print(sum(a))
 # We can combine to get the average
 print(sum(a) / len(a))
+"""
+
+# lists and strings
+# Converting strings to list
+a = "hello world from Nigeria"
+# b = list(a)
+# print(b) # ['h', 'e', 'l', 'l', 'o']
+b = a.split()
+print(b)
+phone = "123-456-789"
+c = phone.split("-")
+print(c)
+# Converting list to string
+print("-".join(c))

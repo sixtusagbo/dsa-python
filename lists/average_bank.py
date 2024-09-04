@@ -1,12 +1,15 @@
-total = 0
-count = 0
+# Use list functions to make this better
+numbers = list()
 while True:
     inp = input("Enter a number: ")
     if inp == "done":
         break
-    value = float(inp)
-    total = total + value
-    count = count + 1
-    average = total / count
+    try:
+        value = float(inp)
+        numbers.append(value)
+    except ValueError:
+        print("Input must be a number")
+
+average = sum(numbers) / len(numbers)
 
 print("Average:", average)

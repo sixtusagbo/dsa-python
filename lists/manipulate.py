@@ -77,6 +77,7 @@ print(sum(a) / len(a))
 
 # Sorting a list
 # sort method
+"""
 a = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 a.sort()  # O(nlogn) time, O(1) space
 print(a)
@@ -86,7 +87,7 @@ b = sorted(a)  # O(nlogn) time, O(n) space
 print(b)
 # The difference between sort and sorted is that sort modifies
 # the list in place while sorted returns a new list
-
+"""
 
 # lists and strings
 # Converting strings to list

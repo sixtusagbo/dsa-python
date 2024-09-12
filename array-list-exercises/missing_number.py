@@ -7,15 +7,14 @@ Example
 missing_number([1, 2, 3, 4, 6], 6) # 5
 """
 
+
 def missing_number(arr, n):
     """Finds the missing number"""
-    missing = -1
     for i in range(len(arr)):
         if i != len(arr) - 1:
             diff = arr[i + 1] - arr[i]
             if diff > 1:
-                missing = arr[i] + 1
-    return missing
+                return arr[i] + 1
 
 
 print(missing_number([1, 2, 3, 4, 6], 6))

@@ -10,11 +10,11 @@ missing_number([1, 2, 3, 4, 6], 6) # 5
 
 def missing_number(arr, n):
     """Finds the missing number"""
-    for i in range(len(arr)):
-        if i != len(arr) - 1:
-            diff = arr[i + 1] - arr[i]
-            if diff > 1:
-                return arr[i] + 1
+    # Sum of n series w/ arithmetic progression algorithm
+    expected_total = n * (n + 1) // 2
+    actual_total = sum(arr)
+    return expected_total - actual_total
 
 
 print(missing_number([1, 2, 3, 4, 6], 6))
+print(missing_number([6, 2, 3, 4, 1], 6))
